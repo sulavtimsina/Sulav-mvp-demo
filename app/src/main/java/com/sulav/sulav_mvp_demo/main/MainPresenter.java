@@ -12,12 +12,9 @@ public class MainPresenter implements MainContract.MvpPresenter {
     }
 
     @Override
-    public void handleSignInButtonClick() {
-
-    }
-
-    @Override
-    public void handleSignUpButtonClick() {
-
+    public void handleSignInButtonClick(String email, String password) {
+        if(email.equals("sulav@gmail.com") && password.equals("sulavpass")){
+            mvpView.signInSuccess();
+        }
     }
 }
