@@ -15,6 +15,8 @@ public class MainPresenter implements MainContract.MvpPresenter {
     public void handleSignInButtonClick(String email, String password) {
         if(email.equals("sulav@gmail.com") && password.equals("sulavpass")){
             mvpView.signInSuccess();
+        } else {
+            mvpView.signInError();
         }
     }
 }
